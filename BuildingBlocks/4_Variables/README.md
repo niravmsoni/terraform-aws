@@ -10,6 +10,9 @@ additional information such as the type, a description, a default value, and oth
 - Syntax
 
 ```hcl
+
+variables.tf
+
 variable "<VAR_NAME>" {
     type = <DATA_TYPE>
     description = <DESCRIPTION>
@@ -29,3 +32,14 @@ USA, starting with \"us-\"."
 }
 }
 ```
+
+- Variables can be assigned values in multiple ways
+    - Defaults
+    - Environment variables
+    - Setting value in terraform.tfvars file
+    - Setting value in terraform.tfvars.json file
+    - *.auto.tfvars or *.auto.tfvars.json
+    - Command line
+
+- Precendence is bottom to top (If same variable is assigned a default value and a command line value, command line will take precedence)
+
