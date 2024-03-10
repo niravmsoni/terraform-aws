@@ -30,3 +30,10 @@ terraform {
 - terraform providers
 - Tells us all the providers required for our configuration to run
 - ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/4dc52979-5815-4f33-8a5b-a5938a0a1a34)
+
+- Terraform Block can accomodate [these](https://developer.hashicorp.com/terraform/language/settings) sub-settings
+  - cloud - Configure Terraform bloud
+  - backend - Storing backend
+  - required_version - TF CLI version required
+  - required_providers - Specifies all providers required by current module
+  - experiments - Additional opt-in features if required
