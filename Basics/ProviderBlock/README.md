@@ -31,3 +31,8 @@ provider "mycloud" {
 - Each provider has 2 identity
     - Unique Source address - Used when requiring a provider
     - Local name - Used everywhere else in terraform module
+
+- Each provider has differrent configurations that it could take in within the provider block
+    - [AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+    - [AzureRm](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+    - [GCP](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
