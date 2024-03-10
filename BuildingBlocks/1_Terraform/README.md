@@ -1,6 +1,13 @@
 # Plugin based architecture
 
+- Syntax
 ```hcl
+terraform {
+  required_version = ""
+  required_provider = ""
+  ..
+  ..
+}
 terraform {
 # Tells us the terraform CLI version that is required for this configuration
   required_version = ">= 1.0.0"

@@ -1,4 +1,15 @@
 # Provider block
+- Syntax
+```hcl
+provider <provider_name> {
+
+}
+
+# Example
+provider aws{
+  region = "us-east-1"
+}
+```
 - Overview
     - Terraform relies on plugins called "providers" to interact with remote systems. Terraform configurations must declare which providers they require, so that Terraform can install and use them.
 
