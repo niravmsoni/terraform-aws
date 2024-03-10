@@ -1,5 +1,22 @@
 # Resource Blocks
+- Syntax
 
+```hcl
+resource "<Type_Of_Resource> <Resource_Name>"{
+    <Resource_Attribute_Key> = <Value>
+}
+
+resource "aws_route_table" "public_route_table"{
+    vpc_id = aws_vpc.vpc.id
+    route{
+        cidr_block = "0.0.0.0/0"
+    }
+    tags = {
+        Name = "Nirav Tag"
+        CreatedThrough = "Terraform"
+    }
+}
+```
 - Terraform uses resource blocks to manage infrastructure, such as virtual networks, compute instances,
 or higher-level components such as DNS records. 
 - Resource blocks represent 1 or more(Using for_Each loop) infrastructure objects in your Terraform configuration
