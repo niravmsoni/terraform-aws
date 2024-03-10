@@ -43,3 +43,21 @@ USA, starting with \"us-\"."
 
 - Precendence is bottom to top (If same variable is assigned a default value and a command line value, command line will take precedence)
 
+- Multi-environment setup
+    - Consider if we have to replicate same infrastructure on multiple environments, most times, we would see there would be environment specific .tfvars file be created
+    - For ex - If we have these environments
+        - Dev
+        - QA
+        - Perf
+        - Prod
+
+    - We could provision 1 variable file per environment i.e.
+        - terraform.dev.tfvars
+        - terraform.qa.tfvars
+        - terraform.perf.tfvars
+        - terraform.prd.tfvars
+    
+    - Typically we would have CI/CD setup for such configuration.
+    - How does terraform know which file to use for which environment?
+        - Within plan/apply command, there is a file switch that we can use to specify which file to use to assign values
+        - terraform apply -var-file="terraform.common.tfvars" -var-file="terraform.dev.tfvars"
