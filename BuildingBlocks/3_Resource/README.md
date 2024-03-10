@@ -6,9 +6,9 @@ resource "<Type_Of_Resource> <Resource_Name>"{
     <Resource_Attribute_Key> = <Value>
 }
 
-resource "aws_route_table" "public_route_table"{
+resource "aws_route_table" "public_route_table" {
     vpc_id = aws_vpc.vpc.id
-    route{
+    route {
         cidr_block = "0.0.0.0/0"
     }
     tags = {
@@ -16,6 +16,9 @@ resource "aws_route_table" "public_route_table"{
         CreatedThrough = "Terraform"
     }
 }
+
+# Here, public_route_table is the name within our terraform code. If a name attribute is present against a resource type (For ex : EC2 instance, we need to specify it within the resource block)
+
 ```
 - Terraform uses resource blocks to manage infrastructure, such as virtual networks, compute instances,
 or higher-level components such as DNS records. 
