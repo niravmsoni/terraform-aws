@@ -19,3 +19,5 @@ terraform {
   }
 }
 ```
+
+- After performing terraform init, it will download required providers
