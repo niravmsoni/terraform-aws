@@ -21,3 +21,4 @@ terraform {
 ```
 
 - After performing terraform init, it will download required providers
+- ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/b3ce73c8-4183-4c88-9a11-0c76c3ad7f31)
