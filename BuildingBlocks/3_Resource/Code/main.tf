@@ -118,7 +118,8 @@ resource "aws_nat_gateway" "nat_gateway" {
 
 # Create S3 bucket
 resource "aws_s3_bucket" "my-new-S3-bucket" {
-bucket = "my-new-tf-test-bucket-nirav-random-string"
+# Updating bucket name to be unique by adding random provider
+bucket = "my-new-tf-test-bucket-nirav-${random_id.randomness.hex}"
 tags = {
 Name = "My S3 Bucket"
 Purpose = "Intro to Resource Blocks Lab"
@@ -149,4 +150,9 @@ tags = {
 Name = "web_server_inbound"
 Purpose = "Intro to Resource Blocks Lab"
 }
+}
+
+# Creating random string for using in S3 bucket name
+resource "random_id" "randomness" {
+byte_length = 16
 }
