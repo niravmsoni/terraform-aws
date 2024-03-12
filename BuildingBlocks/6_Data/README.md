@@ -24,5 +24,5 @@ resources "aws_vpc" "myvpc" {
 - ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/4a63ab7a-3de3-43b0-929b-fcfd8c635003)
 
 - This is of great use when we want to reference resources created outside current Terraform configuration (For ex - Within NG - While getting subnets for different VNets, had to use data block to get subnet Id)
-- There are data blocks within individual resources as well. Refer below image to see EC2 resources
+- There are data blocks within individual resources as well. Refer below image to see EC2 data sources
 - ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/0a34a3d6-bc4c-4ca4-a762-f3f1dfe4fcd2)
