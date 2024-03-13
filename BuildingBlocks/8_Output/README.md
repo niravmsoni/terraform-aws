@@ -1,1 +1,16 @@
 # Output block
+- TF output values allow us to export structured data about our resources
+- We can use this data to configure other parts fo infrastructure with automation tools OR as data source for another TF workspace
+- Outputs are necessary to share data from child module to root module
+
+```hcl
+output <NAME> {
+    value = <Expression>
+}
+
+output "web_server_ip" {
+    description = "Public IP of EC2"
+    value       = aws_instance.web_server.public_ip
+    sensitive   = true
+}
+```
