@@ -16,3 +16,5 @@ output "web_server_ip" {
 ```
 
 - Generally, its recommended practice to have output block in outputs.tf file
+- If terraform code outputs content, it does store it in its state file. For outputing the content in json format, we can execute this command
+    - terraform output -json
