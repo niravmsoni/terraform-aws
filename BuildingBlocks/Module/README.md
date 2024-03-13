@@ -17,7 +17,7 @@ main.tf
 variables.tf
 outputs.tf
 
-- Modules can be developed locally Or can be borrowed from remote registry. Find modules hosted on terraform registry [here](https://registry.terraform.io/browse/modules)
+- Modules can be developed locally or can be borrowed from remote registry. Find modules hosted on terraform registry [here](https://registry.terraform.io/browse/modules)
 - Local modules are commonly saved in modules folder and each module is named for its respective function inside that folder
 - Syntax
 
@@ -36,3 +36,4 @@ Terraform = "true"
 Environment = "certification"
 }
 ```
+- Within example, used these [module from Hashicorp](https://registry.terraform.io/modules/hashicorp/subnets/cidr/latest) 
