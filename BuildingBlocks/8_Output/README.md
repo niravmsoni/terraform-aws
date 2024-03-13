@@ -18,3 +18,4 @@ output "web_server_ip" {
 - Generally, its recommended practice to have output block in outputs.tf file
 - If terraform code outputs content, it does store it in its state file. For outputing the content in json format, we can execute this command
     - terraform output -json
+    - ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/fab3bf2e-3252-4e75-92a5-42241976c586)
