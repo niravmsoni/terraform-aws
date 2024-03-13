@@ -14,3 +14,5 @@ output "web_server_ip" {
     sensitive   = true
 }
 ```
+
+- Generally, its recommended practice to have output block in outputs.tf file
