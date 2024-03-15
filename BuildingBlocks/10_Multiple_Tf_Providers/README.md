@@ -6,3 +6,4 @@
     - TLS Provider [here](https://registry.terraform.io/providers/hashicorp/tls/latest/docs)
 - In-case if we do not specify a version, TF will by-default download the latest provider version
 - Ideally, we should be explicit in specifying the version of the provider we want to use
+- We can use combination of TLS provider + Local Provider to generate pem file for EC2 instance and store it in local file
