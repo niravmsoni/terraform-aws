@@ -1,2 +1,2 @@
-# terraform-with-aws-provider
+# Terraform with AWS
 Terraform Building Blocks with AWS
