@@ -51,7 +51,7 @@ terraform state show aws_instance.web_server
 ```
 IMPORTANT - After TF 15.2, taint and untaint commands are marked deprecated
 
-3. Using -replace flag
+3. -replace flag
     - In the Latest versions of terraform, there is a better way to achieve the same implementation using -replace flag
 
 ```hcl
