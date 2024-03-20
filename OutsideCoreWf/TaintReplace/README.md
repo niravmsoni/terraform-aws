@@ -27,3 +27,5 @@ terraform taint aws_instance.web_server
 terraform plan -out tfPlan
 
 ```
+
+- In-case if a remote-exec provisioner fails due to any reason, terraform marks the resource as tainted
