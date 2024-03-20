@@ -29,8 +29,16 @@ terraform plan -out tfPlan
 
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/fa60cfa8-d765-4e53-93c4-fbfa81585563)
 
-- In-case if a remote-exec provisioner fails due to any reason, terraform marks the resource as tainted
+- In-case if a remote-exec provisioner fails due to any reason OR TF is unable to successfully deploy a resource, TF marks the resource as tainted
 
 - ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/f56984af-2ec2-445f-b15f-92aa52564f28)
 
-- Test
+- To undo taint, there is an 'untaint' command
+
+```hcl
+//Untainting
+terraform untaint aws_instance.web_server
+
+//Checking status of resource. We could see it as untainted and we cannot see any changes in the plan
+terraform state show aws_instance.web_server
+```
