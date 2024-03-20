@@ -8,3 +8,16 @@
 ```hcl
 terraform import
 ```
+
+- For ensuring import works, create an empty resource block within any configuration file
+    - For example, if we have an EC2 instance manually provisioned outside the TF boundary, for importing it,
+
+```hcl
+resource "aws_instance" "aws_linux" {
+
+}
+
+terraform import -help
+
+terraform import aws_instance.aws_linux "Instance_Id" from below screenshot
+```
