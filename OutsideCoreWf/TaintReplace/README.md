@@ -27,3 +27,5 @@ terraform taint aws_instance.web_server
 terraform plan -out tfPlan
 
 ```
+
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/fa60cfa8-d765-4e53-93c4-fbfa81585563)
