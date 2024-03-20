@@ -5,13 +5,13 @@
     - Using Taint
     - Using -replace flag
 
-- 1. Simple way 
+1. Simple way 
     - Comment the configuration block and run terraform plan/apply.
         - This will delete the resource
     - For re-creating it, uncomment the configuration block and re-run terraform plan/apply
         - This will create the resource back
 
-- 2. Terraform taint
+2. Terraform taint
     - However, this approach is not the ideal approach. A better way to deal with this situation is through terraform taint command
 
     - Terraform taint command allows us to manually mark resource for recreation
@@ -51,7 +51,7 @@ terraform state show aws_instance.web_server
 ```
 IMPORTANT - After TF 15.2, taint and untaint commands are marked deprecated
 
-- 3. Using -replace flag
+3. Using -replace flag
     - In the Latest versions of terraform, there is a better way to achieve the same implementation using -replace flag
 
 ```hcl
