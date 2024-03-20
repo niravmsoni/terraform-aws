@@ -26,5 +26,10 @@ terraform import aws_instance.aws_linux "Instance_Id" from below screenshot
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/070a202b-1e9b-4caa-9fea-578d8203a5bb)
 
 - After Import
+  
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/fd487526-2668-4e34-925e-56719801c25b)
 
+
+- After the next Terraform Plan, it throws this error
+
+  ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/a5fe828d-c2f0-4774-96a1-27fc5f899661)
