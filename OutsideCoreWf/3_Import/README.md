@@ -57,3 +57,8 @@ terraform state show aws_instance.aws_linux
 - Now running TF Plan and we see errors go away
 
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/bf2b3620-d108-43eb-95e3-79ad67bdb7b7)
+
+- So, in a nutshell, for importing a resource, there are 2 things that are required.
+    - An Address for Terraform to map to
+    - Resource ID (This can vary for different resources)
+        - For ex - AWS EC2 instance import definition [here](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#import)
