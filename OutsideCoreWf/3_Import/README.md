@@ -54,4 +54,6 @@ terraform state show aws_instance.aws_linux
   
 - ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/f3c1050f-8a32-4cf6-b19b-5da68ff2d972)
 
-- Now running TF Plan
+- Now running TF Plan and we see errors go away
+
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/bf2b3620-d108-43eb-95e3-79ad67bdb7b7)
