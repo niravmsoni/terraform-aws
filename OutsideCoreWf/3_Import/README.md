@@ -49,3 +49,9 @@ terraform state show aws_instance.aws_linux
 ```
 
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/d448fbb4-fa7f-49f8-a410-c9a1d4f17681)
+
+- After manually adding the configuration
+  
+- ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/f3c1050f-8a32-4cf6-b19b-5da68ff2d972)
+
+- Now running TF Plan
