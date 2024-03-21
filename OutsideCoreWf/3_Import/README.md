@@ -45,4 +45,7 @@ terraform state list
 
 terraform state show aws_instance.aws_linux
 
+// With this we can find all the required properties (AMI Id, Instance Type) etc. - See below image
 ```
+
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/d448fbb4-fa7f-49f8-a410-c9a1d4f17681)
