@@ -10,5 +10,9 @@ terraform workspace
 
 
 ```hcl
+
 terraform workspace show
+
 ```
+- Tells us we are operating under default workspace
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/7f25a358-2007-443c-a4f1-d9e1b14613e2)
