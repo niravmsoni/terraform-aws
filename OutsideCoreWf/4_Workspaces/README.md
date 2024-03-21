@@ -7,3 +7,8 @@
 terraform workspace
 ```
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/2a466757-c0b4-4dc0-9d88-4043acb1cd9c)
+
+
+```hcl
+terraform workspace show
+```
