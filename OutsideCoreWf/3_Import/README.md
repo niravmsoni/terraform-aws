@@ -33,3 +33,16 @@ terraform import aws_instance.aws_linux "Instance_Id" from below screenshot
 - After the next Terraform Plan, it throws this error
 
   ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/a5fe828d-c2f0-4774-96a1-27fc5f899661)
+
+- Troubleshooting this error
+
+```hcl
+terraform state list
+
+//Find out the newly imported resource
+
+// Executing below command to see the detailed steps about what is present within the resource
+
+terraform state show aws_instance.aws_linux
+
+```
