@@ -62,3 +62,4 @@ terraform state show aws_instance.aws_linux
     - An Address for Terraform to map to
     - Resource ID (This can vary for different resources)
         - For ex - AWS EC2 instance import definition [here](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#import)
+        - S3 Bucket import definition [here](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#import)
