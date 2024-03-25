@@ -15,7 +15,7 @@ terraform workspace
 terraform workspace show
 
 ```
-- Tells us we are operating under default workspace
+- Tells us we are operating under which workspace
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/7f25a358-2007-443c-a4f1-d9e1b14613e2)
 
 
@@ -35,3 +35,11 @@ terraform show
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/8d9bd6b5-a7a8-4b1c-9ee1-c7a85c68ffe4)
 
 - Updated region of AWS and now executing TF plan, this will show all 26 resources to add since against this workspace(Development) we do not have any resources created
+
+```hcl
+// Switching workspace to default
+terraform workspace select default
+```
+
+- We have terraform workspace variable available. We can use it within tags as well
+- 
