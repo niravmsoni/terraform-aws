@@ -102,3 +102,4 @@ output "public_dns" {
 ```
 
 ## Reusing module
+- Creating another resource using server module
