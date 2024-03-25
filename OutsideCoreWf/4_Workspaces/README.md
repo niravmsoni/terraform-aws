@@ -31,3 +31,5 @@ terraform workspace list
 // This will show us no-state since we're on development workspace and we have not yet run TF init
 terraform show
 ```
+
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/8d9bd6b5-a7a8-4b1c-9ee1-c7a85c68ffe4)
