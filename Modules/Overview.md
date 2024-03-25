@@ -81,7 +81,7 @@ Providers required by state:
     provider[registry.terraform.io/hashicorp/aws]
     provider[registry.terraform.io/hashicorp/tls]
 ```
-- Here we can see along with provider, whatever modules are registered in the configuration, they're also getting visible in the configuration output
+- Here we can see along with provider, whatever modules are invoked in the configuration, they're also getting visible in the configuration output
 
 - We can add two output blocks to our `main.tf` to report back the IP and DNS information from our `server` module. Notice how Terraform references (interpolation syntax) information about the server build from a module.
 
@@ -105,5 +105,6 @@ output "public_dns" {
 ## Reusing module
 
 - Creating another resource using server module
-- 
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/17740d41-9cf4-4188-99b4-cfbda155fe73)
+
+- After doing terraform init, it shows a new entry in the providers block
