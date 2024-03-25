@@ -16,3 +16,4 @@
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/8d1459ec-94d8-4299-a4ac-2b3c15b272a2)
 
 - After executing terraform init, we can see the entire initialization sequence (Initialization of TF, Verifying required providers etc. )
+- ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/9e2b7bd1-bf57-4e41-9819-e863771863ca)
