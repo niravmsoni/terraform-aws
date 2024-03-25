@@ -30,4 +30,5 @@
 
 - Disable Logging
 - Clear the TF_LOG environment variable
+- Generally recommended to turn on logging only if we're troubleshooting something. Once we are done with the error, we can get rid of logging 
 - ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/35905b42-84d7-4c79-bc04-4059a6c20792)
