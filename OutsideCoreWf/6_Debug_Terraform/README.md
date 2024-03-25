@@ -19,10 +19,8 @@
 
 - ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/9e2b7bd1-bf57-4e41-9819-e863771863ca)
 
-
 - We can also persist log to a file using environment variable "TF_LOG_PATH"
 - Set it using
     - Linux - export TF_LOG_PATH = "terraform_log.txt"
     - PS - $env:TF_LOG_PATH="terraform_log.txt"
     - Run terraform init -upgrade to see initialization
-    
