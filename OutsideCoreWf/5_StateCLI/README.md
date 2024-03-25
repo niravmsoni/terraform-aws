@@ -11,4 +11,5 @@
 // Renders all the resources managed by Terraform state
 terraform show
 ```
+- ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/f7828f00-b7b5-43b6-9557-6241330591dc)
 
