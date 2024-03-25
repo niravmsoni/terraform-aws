@@ -17,6 +17,9 @@
 
 - After executing terraform init, we can see the entire initialization sequence (Initialization of TF, Verifying required providers etc. )
 
+- ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/9e2b7bd1-bf57-4e41-9819-e863771863ca)
+
+
 - We can also persist log to a file using environment variable "TF_LOG_PATH"
 - Set it using
     - Linux - export TF_LOG_PATH = "terraform_log.txt"
