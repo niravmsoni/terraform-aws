@@ -87,6 +87,7 @@ Providers required by state:
 
 ## Referencing a module in a TF configuration
 - Upon doing terraform state list, we can see resource created with a module being present here
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/4ce3e597-aead-4574-92ee-158f29ca7663)
 
 
 - We can reference it using module.<moduleName>.<Property>
