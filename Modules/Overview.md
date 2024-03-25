@@ -85,6 +85,12 @@ Providers required by state:
 
 - We can add two output blocks to our `main.tf` to report back the IP and DNS information from our `server` module. Notice how Terraform references (interpolation syntax) information about the server build from a module.
 
+## Referencing a module in a TF configuration
+- Upon doing terraform state list, we can see resource created with a module being present here
+
+
+- We can reference it using module.<moduleName>.<Property>
+
 ```hcl
 output "public_ip" {
   value = module.server.public_ip
@@ -94,3 +100,5 @@ output "public_dns" {
   value = module.server.public_dns
 }
 ```
+
+## Reusing module
