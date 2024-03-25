@@ -105,3 +105,5 @@ output "public_dns" {
 ## Reusing module
 
 - Creating another resource using server module
+- 
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/17740d41-9cf4-4188-99b4-cfbda155fe73)
