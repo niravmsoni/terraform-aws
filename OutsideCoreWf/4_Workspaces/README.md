@@ -17,3 +17,17 @@ terraform workspace show
 ```
 - Tells us we are operating under default workspace
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/7f25a358-2007-443c-a4f1-d9e1b14613e2)
+
+
+- Create a new development workspace
+
+```hcl
+// This will create a new workspace namely development
+terraform workspace new development
+
+// This will show all workspaces (Default + Newly created development)
+terraform workspace list
+
+// This will show us no-state since we're on development workspace and we have not yet run TF init
+terraform show
+```
