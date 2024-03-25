@@ -20,8 +20,9 @@ terraform state list
 ```
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/11a92a38-66a9-4afa-a6e3-26557eb32067)
 
-``hcl
+```hcl
 // For viewing at a detail of individual resource within state file
 terraform state show aws_instance.web_server
 ```
+
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/b05979f6-1f1d-4479-87ee-8aaf3d0493df)
