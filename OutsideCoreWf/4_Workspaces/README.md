@@ -42,4 +42,7 @@ terraform workspace select default
 ```
 
 - We have terraform workspace variable available. We can use it within tags as well
-- 
+
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/d8e35860-3bca-44eb-a8a8-d630d0ae39ac)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/226ed1b3-8655-4274-9407-b1fa048cdae8)
+
