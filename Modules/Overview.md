@@ -9,7 +9,7 @@
 
 - Consider modules as functions in C#. Similar to functions, there are 2 things we need to make sure module behaves as expected
     - Defining a module (Similar to creating a function with input arguments/output variables)
-    - Calling the module (Calling the function by passing in required relevant arguments)
+    - Calling the module (Calling the function by passing in required relevant arguments. Similar to function, we can call the module multiple times and this actually promotes reusability)
 
 ## Creating a local TF Module
 - Create a new directory called `server` in your `/workspace/terraform` directory and create a new file inside of it called `server.tf`.
