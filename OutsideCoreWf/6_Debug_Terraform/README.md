@@ -24,3 +24,5 @@
     - Linux - export TF_LOG_PATH = "terraform_log.txt"
     - PS - $env:TF_LOG_PATH="terraform_log.txt"
     - Run terraform init -upgrade to see initialization
+ 
+  ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/dd95fe10-7dc2-43ae-ad47-e1f519cde490)
