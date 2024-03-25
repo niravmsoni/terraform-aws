@@ -1,2 +1,2 @@
 # Terraform with AWS
-Terraform Building Blocks with AWS
+Getting started with Terraform
