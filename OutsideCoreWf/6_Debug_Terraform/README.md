@@ -25,4 +25,5 @@
     - PS - $env:TF_LOG_PATH="terraform_log.txt"
     - Run terraform init -upgrade to see initialization
  
+ - We can see a log file getting generated like this:
   ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/dd95fe10-7dc2-43ae-ad47-e1f519cde490)
