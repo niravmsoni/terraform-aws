@@ -11,3 +11,5 @@
     - Linux - export TF_LOG=TRACE
     - PS - $env: TF_LOG="TRACE"
     - And run terraform apply
+
+- After executing terraform apply
