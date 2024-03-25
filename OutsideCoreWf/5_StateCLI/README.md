@@ -18,3 +18,4 @@ terraform show
 // Gives us a summary of all the resources managed by Terraform
 terraform state list
 ```
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/11a92a38-66a9-4afa-a6e3-26557eb32067)
