@@ -28,8 +28,10 @@ terraform workspace new development
 // This will show all workspaces (Default + Newly created development)
 terraform workspace list
 
-// This will show us no-state since we're on development workspace and we have not yet run TF init
+// This will show us no-state since we're on development workspace and we have not yet run TF init/plan
 terraform show
 ```
 
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/8d9bd6b5-a7a8-4b1c-9ee1-c7a85c68ffe4)
+
+- Updated region of AWS and now executing TF plan, this will show all 26 resources to add since against this workspace(Development) we do not have any resources created
