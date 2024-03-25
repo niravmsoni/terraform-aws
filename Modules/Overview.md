@@ -74,20 +74,11 @@ terraform providers
 Providers required by configuration:
 .
 |-- provider[registry.terraform.io/hashicorp/aws] ~> 3.0
-|-- provider[registry.terraform.io/hashicorp/http] 2.1.0
-|-- provider[registry.terraform.io/hashicorp/random] 3.1.0
-|-- provider[registry.terraform.io/hashicorp/local] 2.1.0
-|-- provider[registry.terraform.io/hashicorp/tls] 3.1.0
 |-- module.server
     |-- provider[registry.terraform.io/hashicorp/aws]
 
 Providers required by state:
-
     provider[registry.terraform.io/hashicorp/aws]
-
-    provider[registry.terraform.io/hashicorp/local]
-
-    provider[registry.terraform.io/hashicorp/random]
-
     provider[registry.terraform.io/hashicorp/tls]
 ```
+- Here we can see along with provider, whatever modules are registered in the configuration, they're also getting visible in the configuration output
