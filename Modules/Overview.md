@@ -82,3 +82,15 @@ Providers required by state:
     provider[registry.terraform.io/hashicorp/tls]
 ```
 - Here we can see along with provider, whatever modules are registered in the configuration, they're also getting visible in the configuration output
+
+- We can add two output blocks to our `main.tf` to report back the IP and DNS information from our `server` module. Notice how Terraform references (interpolation syntax) information about the server build from a module.
+
+```hcl
+output "public_ip" {
+  value = module.server.public_ip
+}
+
+output "public_dns" {
+  value = module.server.public_dns
+}
+```
