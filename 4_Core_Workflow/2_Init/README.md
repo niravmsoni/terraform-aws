@@ -1,4 +1,4 @@
-# Lab: Initializing Terraform with `terraform init`
+# Terraform Init
 
 The `terraform init` command is used to initialize a working directory containing Terraform configuration files. This is the first command that should be run after writing a new Terraform configuration or cloning an existing one from version control.
 

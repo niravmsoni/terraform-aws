@@ -1,4 +1,4 @@
-# Lab: Generate and review an execution plan with `terraform plan`
+# Terraform Plan
 
 The `terraform plan` command performs a dry-run of executing your terraform configuration and checks whether the proposed changes match what you expect before you apply the changes or share your changes with your team for broader review.
 
