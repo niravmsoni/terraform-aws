@@ -14,3 +14,22 @@
     - outputs.tf
         - Contains outputs to be returned from a module
 
+- How to reference output variables?
+- In order to reference items that are returned by modules (by the module's outputs.tf file) one must use the interpolation syntax referring to the output name returned by the module. Eg: module.server.public_ip
+
+`outputs.tf` of server module
+```hcl
+output "public_ip" {
+  description = "IP Address of server built with Server Module"
+  value       = aws_instance.web.public_ip
+}
+```
+
+Refering to the public_ip of the server module within the root module:
+
+`main.tf` of root module:
+```hcl
+output "public_ip" {
+  value = module.server.public_ip
+}
+```
