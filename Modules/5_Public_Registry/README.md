@@ -79,3 +79,6 @@ Anyone can publish and share modules on the Terraform Registry, but there are so
 - The module repository must have a description which is used to populate the short description of the module. This should be a simple one sentence description of the module.
 - The module must adhere to the standard module structure, `main.tf`, `variables.tf`, `outputs.tf` This allows the registry to inspect your module and generate documentation, track resource usage, parse submodules and examples, and more.
 - x.y.z tags for releases. The registry uses tags to identify module versions. Release tag names must be a semantic version, which can optionally be prefixed with a v. For example, v1.0.4 and 0.9.2. To publish a module initially, at least one release tag must be present. Tags that don't look like version numbers are ignored.
+
+- Each module provider has its own lifecycle for updates, new releases etc. So, always double check the provider we are using for sourcing modules in the code
+- It's best to use official Hashicorp partner modules which can be found by ticking this box
