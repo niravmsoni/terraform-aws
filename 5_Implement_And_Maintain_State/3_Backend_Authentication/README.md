@@ -85,6 +85,8 @@ Do you want to perform these actions?
 
   Enter a value: yes
 ```
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/415b91e2-96df-4c1a-b2a0-8759b7a53189)
+
 Now the state file for your infrastructure build out is stored remotely on the S3 object store in your bucket. This can now be utilized by others who have appropriate permissions to the S3 bucket as we have succesfully centralized the terraform state file.
 - Step 7 - Validate Unauthorized access to S3
 If we set incorrect value in environment variables used to connect to S3 and then try to connect we should see such error
