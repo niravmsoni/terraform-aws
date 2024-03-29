@@ -58,3 +58,9 @@ module "vpc" {
   }
 }
 ```
+
+## IMPORTANT NOTE
+
+- Version constraints are supported only for modules installed from a module registry, such as the public Terraform Registry or Terraform Cloud's private module registry
+
+- Other module sources can provide their own versioning mechanisms within the source string itself, or might not support versions at all. In particular, modules sourced from local file paths do not support version; since they're loaded from the same source repository, they always share the same version as their caller.
