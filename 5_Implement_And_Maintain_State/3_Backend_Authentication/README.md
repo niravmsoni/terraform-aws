@@ -6,7 +6,9 @@
 # Changing State backend from Local to S3 Standard
 - The s3 backend stores Terraform state as a given key in a given bucket on Amazon S3. This backend supports several different methods in which the Terraform CLI can authenticate to the Amazon S3 bucket.
 - Step 1 - Create S3 Bucket
-IMAGE
+
+![Uploading image.png…]()
+
 - Step 2 - Remove existing resource with TF destroy
 If you already have a state file present with infrastructure deployed from previous labs we will first issue a cleanup of our infrastructure using a terraform destroy before changing our our backend. This is not a requirement as Terraform supports the migration of state data between backends, which will be covered in a future lab.
 
