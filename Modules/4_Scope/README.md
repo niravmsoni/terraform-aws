@@ -13,3 +13,4 @@
     - Creates 9 resources
 
 ## Scoping inputs and outputs
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/0b680037-c05b-42f9-9d29-f80bbf649f25)
