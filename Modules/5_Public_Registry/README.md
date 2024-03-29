@@ -82,3 +82,5 @@ Anyone can publish and share modules on the Terraform Registry, but there are so
 
 - Each module provider has its own lifecycle for updates, new releases etc. So, always double check the provider we are using for sourcing modules in the code
 - It's best to use official Hashicorp partner modules which can be found by ticking this box
+
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/3594517f-7fbb-4fea-ba18-92c26652d0d3)
