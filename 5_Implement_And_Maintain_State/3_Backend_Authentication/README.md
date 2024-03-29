@@ -101,3 +101,4 @@ terraform state list
 Error: error configuring S3 Backend: error validating provider credentials: error calling sts:GetCallerIdentity: InvalidClientTokenId: The security token included in the request is invalid
 status code: 403, request id: 00771614-5553-4eaf-ae8d-a3ce54c66060
 ```
+Upon resetting the correct value, we should be able to connect to S3 backend again!
