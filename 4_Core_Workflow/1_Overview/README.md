@@ -5,6 +5,7 @@ The core Terraform workflow has three steps:
 1. Write - Author infrastructure as code.
 2. Plan - Preview changes before applying.
 3. Apply - Provision reproducible infrastructure.
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/66e8ee9d-7534-4559-8718-f9286717181d)
 
 
 The command line interface to Terraform is via the terraform command, which accepts a variety of subcommands such as terraform init or terraform plan. The Terraform command line tool is available for MacOS, FreeBSD, OpenBSD, Windows, Solaris and Linux.
