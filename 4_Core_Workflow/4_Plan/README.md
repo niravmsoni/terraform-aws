@@ -21,7 +21,7 @@ terraform plan
 
 The plan shows you what will happen and the reasons for certain actions (such as re-create).
 
-![Terraform Plan Resources]()
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/ddc53d43-0b92-403b-b2bf-3567bd84a5b4)
 
 Terraform plans do not make any changes to your infrastructure they only report what will occur if a plan is executed against using a `terraform apply`.
 
@@ -76,7 +76,8 @@ The first step of the `terraform plan` process is to read the current state of a
 
 Change the tag of a given object inside the AWS Console
 
-![AWS Tag]()
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/37cf9173-e560-40ec-be36-a788e647a1f9)
+
 
 ```
 terraform plan -refresh-only`
