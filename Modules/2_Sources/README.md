@@ -15,3 +15,5 @@
 terraform init
 ```
 - After pointing it to a new path, there would be no changes in the resource configuration since we have merely updated the path of the module
+
+- Each module hosted on public registry is requried to open source their code on Github. So, we can either reference module from registry or DIRECTLY from the underlying Github repository as well
