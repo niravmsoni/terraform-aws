@@ -1,7 +1,8 @@
 # Terraform modules Public registry
-- Hashicorp maintains a public registry [here](https://registry.terraform.io/browse/modules) helps us consume Terraform modules from others.
+- Hashicorp maintains a public registry [here](https://registry.terraform.io/browse/modules) which helps us consume Terraform modules from others.
 -  It includes support for module versioning and searchable and filterable list of available modules for quickly deploying common infrastructure configurations.
 - Modules on the public Terraform Registry can be sourced using a registry source address of the form <NAMESPACE>/<NAME>/<PROVIDER>
+- Using this, we can simplify our code base. We do not have to write the code to actually provision these resources but rely on modules to do the heavy lifting for us
 
 ## How to consume a Module?
 Let's add an S3 bucket to our configuration using the S3 public module.
