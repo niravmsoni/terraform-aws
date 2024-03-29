@@ -14,3 +14,4 @@
 ```hcl
 terraform init
 ```
+- After pointing it to a new path, there would be no changes in the resource configuration since we have merely updated the path of the module
