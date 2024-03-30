@@ -2,6 +2,7 @@
 
 We don't want to hardcode all of our values in the main.tf file. We can create a variable file for easier use. In the `variables block` lab, we created a few new variables, learned how to manually set their values, and even how to set the defaults. In this lab, we'll learn the other ways that we can set the values for our variables that are used across our Terraform configuration.
 
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/d4485c37-bb23-49c1-b2c0-d0e8207605e0)
 
 - Task 1: Set the value of a variable using environment variables
 - Task 2: Declare the desired values using a tfvars file
