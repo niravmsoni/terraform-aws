@@ -13,3 +13,22 @@ The built in Terraform standard backends store **state remotely** and perform **
 Consult Terraform documentaion for a [full list of Terraform standard backends](https://www.terraform.io/docs/language/settings/backends/index.html)
 
 Most backends also support collaboration features so using a backend is a must-have both from a security and teamwork perspective.
+
+### S3 Backend
+- As seen earlier, we could configure S3 bucket as the backend.
+- There are a number of useful features with S3 which we could leverage while storing S3 backend such as:
+    - Versioning
+    - Encryption
+    - Locking
+
+```hcl
+terraform {
+  backend "s3" {
+    bucket = "myterraformstate"
+    key    = "path/to/my/key"
+    region = "us-east-1"
+  }
+}
+```
+- Versioning
+- Enabling versioning on our terraform backend is important as it allows us to restore the previous version of state should we need to. The s3 backend supports versioning, so every revision of your state file is stored.
