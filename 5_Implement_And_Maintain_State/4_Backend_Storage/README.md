@@ -31,14 +31,17 @@ terraform {
 }
 ```
 - Versioning
-- Enabling versioning on our terraform backend is important as it allows us to restore the previous version of state should we need to. The s3 backend supports versioning, so every revision of your state file is stored.
+    - Enabling versioning on our terraform backend is important as it allows us to restore the previous version of state should we need to. The s3 backend supports versioning, so every revision of your state file is stored.
 
 - ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/a37549b7-06c3-47a6-9171-4ea5b326b3c7)
 
-Once versioning is enabled on your bucket, after making a configuration change, which will result in a state change and execute that change with a 
-```hcl
-terraform apply
-```
-Now you can see that your state file has been updated and if you check Show Versions on the bucket you will see the different versions of your state file.
+    - Once versioning is enabled on your bucket, after making a configuration change, which will result in a state change and execute that change with a `terraform apply`
+
+    - Now you can see that your state file has been updated and if you check Show Versions on the bucket you will see the different versions of your state file.
 
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/e747899e-0840-4d32-8858-77991d0002c7)
+
+- Encryption
+    - It is important to protect terraform state data as it can contain extremely sensitive information. 
+    - Many backends support encryption(Including S3), so that instead of your state files being in **plain text**, they will always be **encrypted** , both in **transit (e.g., via TLS)** and on **disk (e.g., via AES-256)**
+    - The s3 backend supports encryption, which reduces worries about storing sensitive data in state files.
