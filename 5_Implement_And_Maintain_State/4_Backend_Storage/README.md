@@ -34,3 +34,5 @@ terraform {
 - Enabling versioning on our terraform backend is important as it allows us to restore the previous version of state should we need to. The s3 backend supports versioning, so every revision of your state file is stored.
 
 - ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/a37549b7-06c3-47a6-9171-4ea5b326b3c7)
+
+Once versioning is enabled on your bucket, after making a configuration change, which will result in a state change and execute that change with a `terraform apply`
