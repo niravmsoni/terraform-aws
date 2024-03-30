@@ -47,3 +47,5 @@ terraform {
     - The s3 backend supports encryption, which reduces worries about storing sensitive data in state files.
  
   ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/241d6e44-7fbd-4333-8893-86c9b68358d9)
+
+    - IMPORTANT NOTE - Anyone on your team who has access to that S3 bucket will be able to see the state files in an unencrypted form, so this is still a partial solution, but at least the data will be encrypted at rest (S3 supports server-side encryption using AES-256) and in transit (Terraform uses SSL to read and write data in S3).
