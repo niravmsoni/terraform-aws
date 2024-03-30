@@ -12,6 +12,7 @@ Terraform's local state is stored on disk as JSON, and that file must always be 
 
 By default terraform uses a local backend and saves its state file to a terraform.tfstate file located in the working directory. You can validate that your state file lives in the current directory by looking for the presence of a terraform.tfstate file. You may also see a backup that was created for this state file
 
+```shell
 |-- main.tf
 |-- terraform.tf
 |-- terraform.tfstate
@@ -21,7 +22,7 @@ By default terraform uses a local backend and saves its state file to a terrafor
       |-- terraform.tfstate
       |-- terraform.tfstate.backup
 |-- variables.tf
-
+```
 If you open and view the terraform.tfstate file you will notice that it is stored in a json format
 
 ## View/Update Terraform local backend configuration
