@@ -58,3 +58,29 @@ terraform {
     ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/fd7a9233-5f66-4a6e-bf36-03bfc3ad4606)
 
 
+    - Update the `s3` backend to use the new DynamoDB Table and reconfigure your backend.
+
+```hcl
+terraform {
+  backend "s3" {
+    # Replace this with your bucket name!
+    bucket = "myterraformstate"
+    key    = "path/to/my/key"
+    region = "us-east-1"
+
+    # Replace this with DynamoDB table name!
+    dynamodb_table = "terraform-locks"
+    encrypt        = true
+  }
+}
+```
+    - IMPORTANT NOTE - Anytime we make a change to backend configuration, we need to supply the -reconfigure switch!
+    
+```shell
+terraform init -reconfigure
+
+Initializing the backend...
+
+Successfully configured the backend "s3"! Terraform will automatically
+use this backend unless the backend configuration changes.
+```
