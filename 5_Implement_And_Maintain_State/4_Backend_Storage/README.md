@@ -39,4 +39,6 @@ Once versioning is enabled on your bucket, after making a configuration change, 
 ```hcl
 terraform apply
 ```
+Now you can see that your state file has been updated and if you check Show Versions on the bucket you will see the different versions of your state file.
+
 ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/e747899e-0840-4d32-8858-77991d0002c7)
