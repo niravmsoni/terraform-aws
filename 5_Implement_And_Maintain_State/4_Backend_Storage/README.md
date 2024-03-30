@@ -45,3 +45,5 @@ terraform {
     - It is important to protect terraform state data as it can contain extremely sensitive information. 
     - Many backends support encryption(Including S3), so that instead of your state files being in **plain text**, they will always be **encrypted** , both in **transit (e.g., via TLS)** and on **disk (e.g., via AES-256)**
     - The s3 backend supports encryption, which reduces worries about storing sensitive data in state files.
+ 
+  ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/241d6e44-7fbd-4333-8893-86c9b68358d9)
