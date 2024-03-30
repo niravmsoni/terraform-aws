@@ -102,3 +102,6 @@ terraform apply
 ```
 
 Now you can see that your state file is locked by selecting the DynamoDB table and looking at `View Items` to see the lock.
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/c3c909b4-3ae8-47c5-9161-0afe6af608c9)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/be69bddc-40c8-4e00-8c9c-31da53786075)
+Now, no one would be able to modify configuration till this lock entry is deleted. This will be removed once we execute terraform apply and free up the lock
