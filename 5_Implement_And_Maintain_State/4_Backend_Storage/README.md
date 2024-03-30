@@ -55,3 +55,6 @@ terraform {
 
     - State locking for the `s3` backend can be enabled by setting the dynamodb_table field to an existing DynamoDB table name. A single DynamoDB table can be used to lock multiple remote state files.
 
+    ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/fd7a9233-5f66-4a6e-bf36-03bfc3ad4606)
+
+
