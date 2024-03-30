@@ -264,7 +264,7 @@ Do you want to copy existing state to the new backend?
   Enter a value: yes
 ```
 
-![AWS S3 Backend - Keys](img/backend_partial_configuration.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/17320c9d-8fc7-4bea-a741-b89421cfa58a)
 
 ## Task 7: Change state backend configuration back to default
 
