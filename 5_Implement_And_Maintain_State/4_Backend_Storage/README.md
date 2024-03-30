@@ -75,7 +75,7 @@ terraform {
 }
 ```
     - IMPORTANT NOTE - Anytime we make a change to backend configuration, we need to supply the -reconfigure switch!
-    
+
 ```shell
 terraform init -reconfigure
 
@@ -84,3 +84,21 @@ Initializing the backend...
 Successfully configured the backend "s3"! Terraform will automatically
 use this backend unless the backend configuration changes.
 ```
+Update the size of your web server from `t2.small` to a `t2.micro` and apply the change.
+
+```hcl
+resource "aws_instance" "web_server_2" {
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = "t2.micro"
+  subnet_id     = aws_subnet.public_subnets["public_subnet_2"].id
+  tags = {
+    Name = "Web EC2 Server 2"
+  }
+}
+```
+
+```bash
+terraform apply
+```
+
+Now you can see that your state file is locked by selecting the DynamoDB table and looking at `View Items` to see the lock.
