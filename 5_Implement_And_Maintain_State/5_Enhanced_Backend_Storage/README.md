@@ -71,13 +71,15 @@ Now that the terraform workflow is being run using the `remote` backend inside T
 
 We can provide Terraform Cloud with our AWS Credentials as environment variables inside the `Variables` section of our workspace.
 
-![Workspace Variables](img/workspace_variables.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/3f60a523-f2cc-4256-b4cc-440ee245993b)
+
 
 Select `Add variable`, Select `Environment variable`. Create both a `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variable with the AWS credentials. Now whenever the Terraform workflow is executed using our configured `remote` backend, Terraform Cloud knows which credentials to use to access our AWS cloud account.
 
 You can mark one or both of these variables as `Sensitive` so that others cannot view their values.
 
-![TFC AWS Variables](img/workspace_variables_aws.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/099ce145-0830-4f37-b686-fcd0a745e6db)
+
 
 Once set you can build out the infrastructure
 
@@ -113,9 +115,9 @@ Do you want to perform these actions in workspace "my-aws-app"?
 
 You can view the apply also within the Terraform Cloud UI.
 
-![Terraform Cloud Apply](img/workspace_apply.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/d4918866-3765-4075-bf1c-51aaccdcd256)
 
-![Terraform Cloud Apply Detail](img/workspace_apply_detail.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/169d463e-74cd-4d41-b2b1-9dd3bb00479e)
 
 ## Task 5: View the state, log and lock files in Terraform Cloud
 
@@ -133,4 +135,4 @@ Let's view the state file in Terraform Cloud.
 - Navigate to your Workstation
 - In your Workstation UI page, click on the `States` tab
 - You should see something along the lines of this in the `States` tab. This indicates that your state file is now being stored and versioned within Terraform Cloud using the `remote` backend.
-- ![remote state file](img/remote_state.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/8508b1af-7805-47f8-b3f9-b1b02d4265cb)
