@@ -147,7 +147,8 @@ Validate that the migration was successful by listing the items in state using t
 terraform state list
 ```
 
-![Remote State S3](img/remote_state_s3.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/2a5d988b-41e2-48e0-ac68-78415c0040c6)
+
 
 Congratulations! You have succesfully migrated active state from the `local` to `s3` backend and are now storing state remotely. With the `s3` standard backend you are able to share your workspace with teammates, leverage state locking, versioning and the encryption features of the `s3` backend.
 
@@ -210,7 +211,8 @@ Validate that the migration was successful by listing the items in state using t
 terraform state list
 ```
 
-![Remote State TFC](img/remote_state_tfc.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/88a2abd1-c3bd-41ca-8a7f-dfdd632b3f78)
+
 
 Congratulations! You have succesfully migrated active state from the `s3` to `remote` backend and are now storing state remotely in Terraform Cloud. With the `remote` enhanced backend you are able to share your workspace with teammates, leverage state locking, versioning, encryption and centerally perform operations using the features of Terraform Cloud.
 
