@@ -149,7 +149,8 @@ resource "aws_instance" "web_server" {
 
 Change the tag of a given object inside the AWS Console
 
-![AWS Tag - Drift](img/aws_tag_myapp.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/bdab3217-99b7-4fc9-8dbf-89d897182d1f)
+
 
 ## Task 4: Refresh State to detect drift
 
@@ -210,7 +211,7 @@ Do you want to perform these actions?
   Enter a value: yes
 ```
 
-![AWS Tag - Revert](img/aws_tag_myapp_revert.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/f51defc6-8f7e-45e0-a9bb-2a75e841e488)
 
 You can see the out of band changes were reverted to remediate the drift introduced outside of the standard Terraform workflow. Alternatively, you could keep these changes but would need to update the Terraform configuration appropriately.
 
@@ -222,7 +223,8 @@ Instead it is recommended to use the `-refresh-only` option to get the same effe
 
 Change the tag of a given object inside the AWS Console
 
-![AWS Tag - Drift](img/aws_tag_myapp.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/9deb3723-a9d8-4963-8af7-c9f482ccce26)
+
 
 ```
 terraform plan -refresh-only
@@ -354,4 +356,4 @@ aws_instance.web_server: Modifications complete after 2s [id=i-0fdab85c96f92f0e9
 Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
 ```
 
-![AWS Tag - Eliminate Drift](img/aws_tag_myapp_revert.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/46c345f5-36d9-4b87-83ed-4cc2ed0ad7c9)
