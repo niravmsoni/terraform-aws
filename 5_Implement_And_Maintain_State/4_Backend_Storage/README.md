@@ -35,4 +35,8 @@ terraform {
 
 - ![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/a37549b7-06c3-47a6-9171-4ea5b326b3c7)
 
-Once versioning is enabled on your bucket, after making a configuration change, which will result in a state change and execute that change with a `terraform apply`
+Once versioning is enabled on your bucket, after making a configuration change, which will result in a state change and execute that change with a 
+```hcl
+terraform apply
+```
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/e747899e-0840-4d32-8858-77991d0002c7)
