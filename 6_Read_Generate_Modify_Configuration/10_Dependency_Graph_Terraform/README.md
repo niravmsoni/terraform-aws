@@ -50,7 +50,8 @@ resource "tls_private_key" "generated" {
 
 Because we have defined our infrastructure in code, we can build a data structure around it and then work with it. Some of these nodes depend on data from other nodes which need to be spun up first. Others might be disconnected or isolated. Our graph might look something like this, with the arrows showing the the dependencies and order of operations.
 
-![Terraform Graph: Built-in dependency management](img/terraform_graph_walk.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/0e15c593-27e6-4874-8d62-03bdb9fc31f1)
+
 
 Terraform walks the graph several times starting at the root node and using the providers: to collect user input, to validate the config, to generate a plan, and to apply a plan. Terraform can determine which nodes need to be created sequentially and which can be created in parallel.  In this case our private key can be built in parallel with our VPC, while our subnets and internet gateways are dependent on the AWS VPC being built first.
 
@@ -75,9 +76,5 @@ digraph {
 ```
 
 Paste that output into http://www.webgraphviz.com to get a visual representation of dependencies that Terraform creates for your configuration.
-
-![Visualize Terraform Graph](img/terraform_graph_viz_1.png)
-
 We can find our resources on the graph and follow the dependencies, which is what Terraform does everytime we exercise it's workflow.
-
-![Visualize Terraform Graph Dependencies](img/terraform_graph_viz_2.png)
+![image](https://github.com/niravmsoni/terraform-aws/assets/6556021/9dc037b3-3947-488e-a473-230e93fa0960)
