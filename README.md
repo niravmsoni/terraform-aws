@@ -4,3 +4,4 @@ Getting started with Terraform
 - Components
 - Core Workflow
 - Modules
+- Terraform Cloud
